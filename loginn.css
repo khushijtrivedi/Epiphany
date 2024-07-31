@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color:#111;
+}
+
+h1{
+    background-color: #333;
+    text-align: center;
+    color: #ddd;
+}
+header {
+	/*Strictly Necessary */
+	position: fixed;
+	width: 100%;	
+	height: 100px; /*Adjust the hight to your purposes*/
+}
+#rightSideWrapper {
+	/*Strictly Necessary */
+	width:100%; 
+	float: right;
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ca3712;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #ca3712;
+  color: white;
+}
+
+
+.content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+footer {
+  /*Strictly Necessary */
+  height: 100px;
+  order: 3;
+  flex: 0 1 100%;
+  color: #fff;
+  background-color: #333;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+.ContentBox{
+	margin-top: 100px; /*The height of the   header*/
+	display:flex;
+	flex-flow: row wrap;
+} 
+
+main {
+    /*Strictly Necessary */
+    height: 400px;
+    order: 1;
+    flex: 0 1 100%; 
+      
+  }
+  
+  section {
+    /*Strictly Necessary */
+     height: 400px;
+     order: 2;
+     flex: 0 1 100%;
+  }
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 1;
+  border-color: #ca3712;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form input[type=submit] {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #ca3712;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form input[type=submit]:hover,.form input[type=submit]:active,.form input[type=submit]:focus {
+  background: #b64023;
+}
+.form .message {
+  margin: 15px 0 0;
+  color:#111;
+  font-size: 12px;
+}
+.form .message a {
+  color:#ca3712;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}

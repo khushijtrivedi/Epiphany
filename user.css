@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color:#111;
+}
+
+h1{
+    background-color: #333;
+    text-align: center;
+    color: #ddd;
+}
+header {
+	/*Strictly Necessary */
+	position: fixed;
+	width: 90%;	
+	height: 100px; /*Adjust the hight to your purposes*/
+}
+#rightSideWrapper {
+	/*Strictly Necessary */
+	width:90%; 
+	float: right;
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ca3712;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #ca3712;
+  color: white;
+}
+
+
+.content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #333;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    background-color: #333;
+} 
+footer {
+    /*Strictly Necessary */
+    height: 100px;
+    order: 3;
+    flex: 0 1 100%;
+    color: #fff;
+    background-color: #333;
+  }
+.ContentBox{
+	margin-top: 100px; /*The height of the   header*/
+	display:flex;
+	flex-flow: row wrap;
+} 
+
+main {
+    /*Strictly Necessary */
+    height: 400px;
+    order: 1;
+    margin-top: 20%;
+    flex: 0 1 100%; 
+      
+  }
+  
+  section {
+    /*Strictly Necessary */
+     height: 400px;
+     order: 2;
+     flex: 0 1 100%;
+  }
+.wrapper .sidebar{
+    background:#333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    padding: 95px 0;
+    transition: all 0.5s ease;
+}
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #000203;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #f5f6f6;
+
+    background:#ca3712;
+    border-right: 2px solid #ca3712;
+}
+
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+
+  
+  table{
+    border-collapse: collapse;
+    width: 60%;
+    background-color: #fff;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  table th{
+color:black;
+padding: 20px;
+}
+
+table tr{
+color:black;
+font-size: 1.2em;
+padding: 20px;
+text-align: center;
+}
+
+.btn{
+    background-color: #000203;
+    color: #ddd;
+    font-size: 0.8em;
+    padding: 0.5px 1px;
+}
+.btn:hover{
+    background-color: rgb(189, 58, 58);
+    color: rgb(0, 0, 0);
+    font-size: 0.8em;
+    padding: 0.5px 1px;
+}
